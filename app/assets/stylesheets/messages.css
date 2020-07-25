@@ -48,6 +48,20 @@
 .main-head {
   height: 100px;
   padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.room-name {
+  font-size: 24px;
+  color: #333;
+}
+
+.finish-btn {
+  padding: 20px;
+  color: darkred;
+  border: 1px solid darkred;
 }
 
 .messages {
@@ -56,8 +70,71 @@
   padding: 40px 40px 0;
 }
 
+.message {
+  padding: 10px 0;
+  margin-bottom: 40px;
+}
+
+.message-data {
+  display: flex;
+}
+
+.name {
+  margin-right: 10px;
+  font-size: 16px;
+  color: #434a54;
+}
+
+.date {
+  font-size: 12px;
+  color: #999;
+}
+
+.message-text {
+  font-size: 14px;
+  color: #434a54;
+}
+
 .form {
+  background-color: #DDDDDD;
   height: 90px;
-  background-color: #ddd;
   padding: 20px 40px;
+  display: flex;
+}
+
+.form-input {
+  background-color: white;
+  display: flex;
+  width: 100%;
+}
+
+.form-message {
+  border: none;
+  height: 50px;
+  width: 100%;
+  padding-left: 10px;
+}
+
+.form-submit {
+  background-color: #38AEF0;
+  border: none;
+  color: white;
+  font-size: 16px;
+  height: 50px;
+  margin-left: 15px;
+  padding: 0 20px;
+}
+
+.form-image {
+  font-size: 12px;
+  background-color: lightblue;
+  color: white;
+  padding: 12px;
+  width: 60px;
+  margin: 5px 10px;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
 }
