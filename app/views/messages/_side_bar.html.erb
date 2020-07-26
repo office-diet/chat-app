@@ -1,10 +1,11 @@
 <div class="side-bar">
   <div class="side-head">
     <div class="user-name"><%= link_to current_user.name, "/users/#{current_user.id}/edit",class: "user-name" %></div>
-    <div class="side-btn">チャットを作成する</div>
+    <div class="side-btn"><%= link_to "チャットを作成する", new_room_path %></div>
   </div>
   <div class="rooms">
-    <div class="room">ChatRoom1</div>
-    <div class="room">ChatRoom2</div>
+    <% current_user.rooms.each do |room| %>
+      <div class="room"><%= room.name %></div>
+    <% end %>
   </div>
 </div>
