@@ -8,6 +8,6 @@ Rails.application.routes.draw do
   # こちらは削除してOKです
   root "messages#index"
 
-  get '/rooms/new', to: 'rooms#new'
+  resources :rooms, only: [:new, :create]
 
 end
