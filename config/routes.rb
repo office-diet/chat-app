@@ -8,6 +8,8 @@ Rails.application.routes.draw do
   # こちらは削除してOKです
   root "rooms#index"
 
-  resources :rooms, only: [:new, :create]
+  resources :rooms, only: [:new, :create, :destroy] do
+    resources :messages, only: [:index, :create]
+  end
 
 end

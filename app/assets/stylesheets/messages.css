@@ -1,5 +1,6 @@
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 .wrapper {
@@ -79,22 +80,22 @@ a {
   margin-bottom: 40px;
 }
 
-.message-data {
+.upper-message {
   display: flex;
 }
 
-.name {
+.message-user {
   margin-right: 10px;
   font-size: 16px;
   color: #434a54;
 }
 
-.date {
+.message-date {
   font-size: 12px;
   color: #999;
 }
 
-.message-text {
+.message-content {
   font-size: 14px;
   color: #434a54;
 }
