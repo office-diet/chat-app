@@ -1,7 +1,6 @@
 class MessagesController < ApplicationController
   before_action :set_room_message
   def index
-    @messages = @room.messages
   end
   
   def create
@@ -20,6 +19,7 @@ class MessagesController < ApplicationController
   
   def set_room_message
     @room = Room.includes(:messages).find(params[:room_id])
+    @messages = @room.messages
     @message = Message.new
   end
 
