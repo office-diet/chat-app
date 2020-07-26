@@ -1,7 +1,7 @@
 <div class="main">
   <div class="main-head">
     <div class="room-name"><%= @room.name %></div>
-    <div class="finish-btn">チャットを終了する</div>
+    <div class="finish-btn"><%= link_to "チャットを終了する", room_path(@room.id), method: :delete %></div>
   </div>
   <div class="messages">
     <%= render partial: "message", collection: @messages %>
